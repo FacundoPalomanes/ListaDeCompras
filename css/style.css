@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+}
+
+body {
+    background-color: #a7d68c; 
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    margin: 20px 0 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .center_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+}
+
+.space_beetween {
+    justify-content: space-between;
+    padding: 0% 25%;
+}
+
+.text_input {
+    width: 50%;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 100px;
+    border-color: transparent;
+    padding-left: 30px;
+    outline:  none;
+}
+
+.text_input:focus {
+    outline:  solid 2px #ff9800;
+}
+
+.number_input {
+    width: 6%;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 15px;
+    border-color: transparent;
+    background-color: #fff;
+    font-size: 13px;
+    outline: none;
+}
+
+.number_input:focus {
+    outline:  solid 2px #ff9800;
+}
+
+.button {
+    cursor: pointer;
+    width: 15%;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ff9800;
+    color: #fff;
+    font-size: 13px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: all 300ms;
+    outline:  solid 2px #ff9800;
+}
+
+.button:hover {
+    background: #fff;
+    color: #ff9800;
+}
+
+.empty_list {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 0% 26%;
+    padding: 3.5%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 10px 10px 10px;
+}
+
+.things_list {
+    display: grid;
+    grid-template-columns: 7fr 2fr auto; /* Personaliza el ancho de las columnas */
+    margin: 0% 26%;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 10px 10px 10px;
+    align-items: center;
+    gap: 0.5rem; 
+}
+
+.things_list h3 {
+    justify-self: start; 
+    margin-left: 5%; 
+}
+
+.erase_button {
+    justify-self: end;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem; 
+    margin-right: 50%;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .button {
+        width: 30%;
+    }
+    .number_input {
+        width: 15%;
+    }
+    .empty_list {
+        margin: 5% 15%;
+    }
+    .text_input {
+        width: 80%;
+    }
+    .things_list {
+        margin: 0% 10%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .button {
+        width: 90%;
+        justify-content: space-between;
+        margin: 5%;
+    }
+    .number_input {
+        width: 25%;
+    }
+    .empty_list {
+        margin: 10% 10%;
+    }
+    .text_input {
+        width: 95%;
+        font-size: 15px;
+    }
+    .things_list {
+        margin: 0% 5%;
+    }
+    .center_div{
+        margin: 4%;
+    }
+    .space_beetween {
+        padding: 1% 0%;
+    }
+}

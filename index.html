@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lista de Compras</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="compras">
+    <meta name="author" content="Facundo Palomnes">
+    <link rel="icon" href="icon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <header>
+            <h2>🧺🛒Lista de Compras🛒🧺</h2>
+        </header>
+        <section>
+            <div class="center_div">
+                <input class="text_input" id="text_input" type="text"
+                    placeholder="¿Que producto deseas agregar al carrito?">
+            </div>
+            <div class="center_div space_beetween">
+                <input class="number_input" type="number" id="value_input" value="1" min="1" max="15">
+                <button class="button" type="button" id="add">Agregar</button>
+                <button class="button" id="restablecer">Restablecer</button>
+            </div>
+            <div id="list"></div>
+        </section>
+        <script src="js/functions.js"></script>
+    </div>
+</body>
+
+</html>
