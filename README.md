@@ -1,4 +1,4 @@
-# ListaDeCompras
+# Lista De Compras
 <p>Una pagina web sencilla de una lista para compras con cantidad y mantener la lista aunque cierres la pagina</p>
 
 ## 💼 Lenguajes utilizadas
